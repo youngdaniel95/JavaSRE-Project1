@@ -1,0 +1,8 @@
+{
+  "properties": [
+    {
+      "name": "api.config.api2-url",
+      "type": "java.lang.String",
+      "description": "Description for api.config.api2-url."
+  }
+] }

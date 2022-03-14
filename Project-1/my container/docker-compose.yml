@@ -1,0 +1,48 @@
+version: "3.9"
+
+services:
+  api1:
+    container_name: api1
+    image: youngdaniel9/reimb-api
+    ports:
+      - 8081:8080
+    
+  api2:
+    container_name: api2
+    image: youngdaniel9/email-api
+    ports:
+      - 8080:8080
+
+    
+  #   depends_on:
+  #     - postgresdb
+
+  # postgresdb:
+  #   image: postgres
+  #   ports:
+  #     - 5432:5432
+  #   environment:
+      # - DB_URL=jdbc:postgresql://localhost:5432/reimbursementapi
+      # - POSTGRES_USERNAME=postgres
+      # - POSTGRES_PASSWORD=daniel1
+      # - POSTGRES_DB=reimbursementapi
+
+  # api2:
+  #   image: youngdaniel9/email-api
+  #   container_name: api2
+  #   ports:
+  #     - 8080:8081
+
+
+# services:
+#   app:
+#     container_name: project1-container
+#     image: project1-container
+#     build: ./
+#     ports:
+#       - "8080:8080"
+
+    
+
+
+    
